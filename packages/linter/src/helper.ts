@@ -1,4 +1,5 @@
 const CONCURRENCY = 8;
+const LIMITED = 4;
 
 import { parse, format, resolve } from "url";
 import { stringify } from "querystring";
@@ -76,7 +77,7 @@ export function fetchToCurl(
 }
 
 export const redirectUrl = throat(
-  CONCURRENCY,
+  LIMITED,
   async (context: Context, s: string | Request) => {
     const res = await fetch(s, { headers: context.headers });
     return res.url;
@@ -96,7 +97,7 @@ export function dimensions(
 }
 
 export const contentLength = throat(
-  CONCURRENCY,
+  LIMITED,
   async (context: Context, s: string | Request) => {
     const options = Object.assign(
       {},
@@ -111,3 +112,6 @@ export const contentLength = throat(
     return contentLength ? contentLength : 0;
   }
 );
+
+/* { agent: new https.Agent({ keepAlive: true, maxSockets: 6, }), compress: true, };
+*/
