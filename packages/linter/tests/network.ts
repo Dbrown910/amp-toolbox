@@ -50,7 +50,7 @@ withFixture("thumbnails3", () =>
   assertMatch(
     `${StoryMetadataThumbnailsAreOk.name} - poster-portrait-src not found`,
     runNetworkTest(StoryMetadataThumbnailsAreOk, "http://localhost:5000/"),
-    "file not found"
+    "FAIL"
   )
 );
 

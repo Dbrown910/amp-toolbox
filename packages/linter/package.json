@@ -19,6 +19,7 @@
     "commander": "5.1.0",
     "debug": "4.1.1",
     "execa": "4.0.2",
+    "image-size": "^0.8.3",
     "node-fetch": "2.6.0",
     "probe-image-size": "5.0.0",
     "throat": "5.0.0"
