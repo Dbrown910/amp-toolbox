@@ -1,0 +1,21 @@
+[
+    {
+        "scope": "https://fantastic-lemon-asterisk.glitch.me:443",
+        "method": "GET",
+        "path": "/",
+        "body": "",
+        "status": 403,
+        "response": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>📈 Project Quota Exceeded</title>\n    <meta name=\"viewport\" content=\"initial-scale=1, width=device-width\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://glitch.com/edit/themes/sugar.css\">\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js\"></script>\n    <script src=\"https://glitch.com/edit/error-page.js\"></script>\n    <style>\n      .error-page a {\n        color:  powderblue;\n      }\n\n      .error-page .container {\n        max-width: 800px;\n      }\n    </style>\n  </head>\n  <body class=\"error-page ghost-border\">\n    <div class=\"container\">\n\n      <h1>\n        Project Cannot Run\n      </h1>\n\n\n      <h2>\n        Due to our project quota limits, this app is unavailable.\n      </h2>\n\n      <h2>\n        Please review our <a href=\"https://glitch.com/help/restrictions/\">technical restrictions</a>.\n      </h2>\n\n      <div class=\"actions\">\n        <a href=\"https://glitch.com\">\n          <div class=\"glitch-logo bird\">\n          </div>\n        </a>\n      </div>\n    </div>\n\n    <canvas id=\"stars\"></canvas>\n\n  </body>\n</html>\n",
+        "rawHeaders": [
+            "Date",
+            "Tue, 21 Jul 2020 16:04:51 GMT",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Cache-Control",
+            "max-age=0"
+        ],
+        "responseIsBinary": false
+    }
+]
